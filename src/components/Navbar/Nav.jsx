@@ -7,8 +7,8 @@ function Nav() {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   return (
-    <section id="Navigation" className='z-20'>
-      <nav className='fixed top-0 w-full md:border-b md:border-solid md:border-zinc-800 backdrop-blur-sm'>
+    <section id="Navigation" className='fixed top-0 w-full z-20'>
+      <nav className='w-full md:border-b md:border-solid md:border-zinc-800 backdrop-blur-sm'>
         <div className='bg-[rgba(0,0,0,0.85)] text-zinc-200 flex items-center justify-between md:justify-center p-3 md:p-0'>
           <h1 className='hidden md:inline text-3xl md:text-2xl font-serif text-center md:w-1/2 md:max-w-xl'>{userInfo.info.name}</h1>
           <h1 className='inline md:hidden text-3xl md:text-2xl font-[Italiana] text-center md:w-1/2 md:max-w-xl'>DH</h1>
