@@ -2,8 +2,8 @@ import userInfo from "../../assets/userInfo";
 
 function WorkCard(props) {
   return (
-    <div className="transition-all duration-200 w-72 md:w-96 flex-none p-4 bg-zinc-100 border border-zinc-400 border-solid">
-      <h2 className="font-serif text-xl text-zinc-800">{props.employer}</h2>
+    <div className={`transition-all duration-100 ease-out w-72 md:w-96 flex-none p-4 rounded-sm shadow-sm shadow-indigo-950 hover:shadow-lg bg-zinc-100 border border-zinc-400 border-solid ${props.isActive ? 'opacity-100' : 'opacity-0'}`}>
+      <h2 className="font-serif text-2xl text-zinc-800">{props.employer}</h2>
       <p className="text-md  font-[Montserrat] text-zinc-600">{props.title}</p>
       <p className="text-sm font-[Montserrat] text-zinc-500">{props.startDate} - {props.endDate}</p>
       <hr className="w-3/4 mx-auto font-[Montserrat] text-zinc-400/50 my-2" />

@@ -12,7 +12,7 @@ function Intro() {
             <h2 className='transition-all duration-200 text-blue-500 hover:text-purple-700 text-xl tracking-tight font-[Montserrat] font-medium text-center md:text-left'><a href={`mailto:${userInfo.info.email}`}>{userInfo.info.email}</a></h2>
           </div>
         </div>
-        <p className='max-w-4xl text-lg text-left font-[Montserrat] self-center justify-self-center py-9' dangerouslySetInnerHTML={{ __html: userInfo.info.summary }} />
+        <p className='max-w-4xl text-lg text-left font-[Montserrat] self-center justify-self-center py-9 [&>b]:font-semibold' dangerouslySetInnerHTML={{ __html: userInfo.info.summary }} />
         <div className='flex flex-col sm:flex-row gap-4 w-full max-w-xl'>
           <a className='w-full' href="/resume.pdf" download="dakota_huyghe_resume.pdf">
             <button className='transition-all duration-200 w-full bg-linear-to-br from-green-400 to-emerald-600 hover:gl-linear-to-br hover:from-green-200 hover:to-emerald-400 font-[Montserrat] font-medium text-zinc-200 hover:text-emerald-700 shadow-sm hover:shadow-lg shadow-indigo-950 inset-shadow-sm inset-shadow-emerald-50 rounded-full cursor-pointer'>

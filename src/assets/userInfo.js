@@ -37,7 +37,7 @@ const userInfo = {
     profilePicture: "/profile.jpg",
     resume: "/resume.pdf",
     summary:
-      "<b>Experienced customer service</b> representative specializing in more technical aspects of customer issues. Looking for a <b>Help Desk</b> position where I can utilize my technical expertise and passion for helping users by <b>resolving complex issues</b> in a timely, friendly manner.",
+      "A detail-oriented customer service professional with a knack for <b>resolving complex technical issues</b>. I'm seeking a Help Desk or IT support role where I can apply my passion for <b>Linux and Bash scripting</b> to provide excellent user support. I am currently pursuing <b>CompTIA A+, Security+, and Network+ certifications</b> to expand my IT expertise.",
   },
   skills: {
     soft: [
