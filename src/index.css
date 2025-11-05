@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@view-transition {
+  navigation: auto;
+}
 
 @theme {
   --animate-opacity-1: opacity 2s ease-in 500ms forwards;

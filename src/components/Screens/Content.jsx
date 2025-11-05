@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "motion/react";
 import Nav from "../Navbar/Nav";
 import Intro from "../Intro/Intro";
 import WorkHist from "../WorkHist/WorkHist";
@@ -6,13 +7,15 @@ import Skills from "../Skills/Skills";
 
 function Content(props) {
   return (
-    <div className={`transition-all duration-350 xl:duration-500 ease-out absolute top-0 left-0 w-screen h-screen overflow-x-hidden ${!props.viewSplash ? 'scale-x-100 opacity-100 z-100' : 'scale-x-0 opacity-0 z-0'}`}>
-      <Nav />
-      <Intro />
-      <WorkHist />
-      <Education />
-      <Skills />
-    </div>
+    <AnimatePresence initial={true} mode="wait">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .4 }}>
+        <Nav />
+        <Intro />
+        <WorkHist />
+        <Education />
+        <Skills />
+      </motion.div>
+    </AnimatePresence>
   )
 }
 

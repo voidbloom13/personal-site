@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 import userInfo from '../../assets/userInfo';
 import NavLinks from './NavLinks.jsx';
 import NavSections from './NavSections.jsx';
@@ -9,13 +10,19 @@ function Nav() {
   return (
     <section id="Navigation" className='fixed top-0 w-full z-20'>
       <nav className='w-full md:border-b md:border-solid md:border-zinc-800 backdrop-blur-sm'>
-        <div className='bg-[rgba(0,0,0,0.85)] text-zinc-200 flex items-center justify-between md:justify-center p-3 md:p-0'>
-          <h1 className='hidden md:inline md:text-2xl font-serif text-center md:w-1/2 md:max-w-xl'>{userInfo.info.name}</h1>
-          <h1 className='inline md:hidden text-3xl font-[Italiana] text-center'>DH</h1>
-          <div className='md:w-1/2 md:max-w-xl flex items-end justify-center'>
+        <div className='bg-[rgba(0,0,0,0.85)] text-zinc-200 flex items-center justify-between md:justify-center md:gap-48 p-3 md:p-0'>
+          <div>
+            <Link to="/" className='hidden md:inline md:text-2xl font-serif text-center' viewTransition>
+              {userInfo.info.name}
+            </Link>
+            <Link to="/" className='md:hidden text-3xl font-[Italiana]' viewTransition>
+              DH
+            </Link>
+          </div>
+          <div className='flex items-end justify-center'>
             <NavLinks className="hidden md:flex" links="userInfo.links" onClick={() => setIsMenuActive(false)} />
             <button className='md:hidden hover:bg-[rgba(0,0,0,0.2)] p-3 rounded-full justify-self-end' onClick={() => setIsMenuActive(!isMenuActive)}>
-              {isMenuActive ? <i className='fa-solid fa-x'></i> : <i className='fa-solid fa-bars'></i>}
+              {isMenuActive ? <i className='fa-solid fa-x text-2xl'></i> : <i className='fa-solid fa-bars text-2xl'></i>}
             </button>
           </div>
         </div>

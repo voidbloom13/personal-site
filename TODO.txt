@@ -1,0 +1,6 @@
+- Scroll animation for content
+  - Screen should not be scrollable, content position should be adjusted on scroll
+  - Main Content is centered on screen
+  - Section Before/After is transformed up/down, scaled to look tilted, and opacity is reduced
+  - Effect should look like content is rotating horizontally like a cylinder
+- Dark Mode toggle (Dark by default so users don't get flashbanged)
