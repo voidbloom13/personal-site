@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-opacity-1: opacity 2s ease-in 500ms forwards;
+  --animate-opacity-2: opacity 2s ease-in 2000ms forwards;
+  --animate-opacity-3: opacity 2s ease-in 3500ms forwards;
+  --animate-opacity-4: opacity 2s ease-in 5000ms forwards;
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

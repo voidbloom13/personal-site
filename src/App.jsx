@@ -1,19 +1,20 @@
+import { useState } from "react";
+import SplashScreen from "./components/Screens/SplashScreen";
+import Content from "./components/Screens/Content";
 import "./index.css";
 import "./App.css";
-import Nav from "./components/Navbar/Nav";
-import Intro from "./components/Intro/Intro";
-import WorkHist from "./components/WorkHist/WorkHist";
-import Education from "./components/Education/Education";
-import Skills from "./components/Skills/Skills";
 
 export default function App() {
+  const [viewSplash, setViewSplash] = useState(true);
+
+  function displayContent() {
+    setViewSplash(!viewSplash);
+  }
+
   return (
     <>
-      <Nav />
-      <Intro />
-      <WorkHist />
-      <Education />
-      <Skills />
+      <SplashScreen toggleScreen={() => displayContent()} viewSplash={viewSplash} />
+      <Content viewSplash={viewSplash} />
     </>
   )
 }
