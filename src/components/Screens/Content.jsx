@@ -10,10 +10,12 @@ function Content(props) {
     <AnimatePresence initial={true} mode="wait">
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .4 }}>
         <Nav />
-        <Intro />
-        <WorkHist />
-        <Education />
-        <Skills />
+        <div className="bg-linear-to-b from-black to-indigo-950 py-24">
+          <Intro />
+          <WorkHist />
+          <Education />
+          <Skills />
+        </div>
       </motion.div>
     </AnimatePresence>
   )

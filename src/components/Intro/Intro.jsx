@@ -2,7 +2,7 @@ import userInfo from '../../assets/userInfo';
 
 function Intro() {
   return (
-    <section id="Introduction" className='w-full bg-zinc-100 text-zinc-800 pt-24 pb-6'>
+    <section id="Introduction" className='w-full text-zinc-200 py-12'>
       <div className='w-9/10 max-w-6xl mx-auto flex flex-col items-center'>
         <div className='flex flex-col gap-4 md:flex-row items-center justify-center '>
           <img className='max-w-48 h-auto rounded-full md:justify-self-end border border-zinc-800 border-solid text-center align-middle' src={userInfo.info.profilePicture} alt={`${userInfo.info.name}'s profile picture`} />

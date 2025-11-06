@@ -37,7 +37,7 @@ const userInfo = {
     profilePicture: "/profile.jpg",
     resume: "/resume.pdf",
     summary:
-      "A detail-oriented customer service professional with a knack for <b>resolving complex technical issues</b>. I'm seeking a Help Desk or IT support role where I can apply my passion for <b>Linux and Bash scripting</b> to provide excellent user support. I am currently pursuing <b>CompTIA A+, Security+, and Network+ certifications</b> to expand my IT expertise.",
+      "A detail-oriented customer service professional with a knack for <b class='bg-linear-to-br from-sky-400 to-purple-400 bg-clip-text text-transparent'>resolving complex technical issues</b>. I'm seeking a Help Desk or IT support role where I can apply my passion for <b class='bg-linear-to-br from-sky-400 to-purple-400 bg-clip-text text-transparent'>Linux and Bash scripting</b> to provide excellent user support. I am currently pursuing <b class='bg-linear-to-br from-sky-400 to-purple-400 bg-clip-text text-transparent'>CompTIA A+, Security+, and Network+ certifications</b> to expand my IT expertise.",
   },
   skills: {
     soft: [

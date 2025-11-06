@@ -23,13 +23,13 @@ export default function Carousel(props) {
         {props.array.map((job, index) => <WorkCard key={job.employer} isActive={activeSlide === index ? true : false} employer={job.employer} title={job.title} startDate={job.startDate} endDate={job.endDate} description={job.description} />)}
       </div>
       <div className='flex flex-row justify-around items-center mt-4'>
-        {activeSlide <= 0 ? <i className='fa-solid fa-chevron-left text-zinc-400 text-3xl cursor-pointer' /> : <i onClick={previous} className='fa-solid fa-chevron-left text-3xl cursor-pointer' />}
+        {activeSlide <= 0 ? <i className='fa-solid fa-chevron-left text-zinc-400 text-3xl cursor-pointer' /> : <i onClick={previous} className='fa-solid fa-chevron-left text-3xl cursor-pointer text-sky-600 text-shadow-sm hover:text-shadow-md text-shadow-sky-800 hover:text-shadow-sky-600' />}
         <div className='flex flex-row m-4 items-center justify-center gap-4'>
           {props.array.map((_, index) => index === activeSlide
             ? <div key={index} onClick={() => changeSlide(index)} className='transition-all duration-200 cursor-pointer size-4 border border-solid border-zinc-500 rounded-full bg-linear-to-br from-lime-300 to-green-400 shadow-md shadow-green-600' />
             : <div key={index} onClick={() => changeSlide(index)} className='transition-all duration-200 cursor-pointer size-4 border border-solid border-zinc-500 rounded-full bg-linear-to-br from-zinc-300 to-zinc-600' />)}
         </div>
-        {activeSlide >= props.array.length - 1 ? <i className='fa-solid fa-chevron-right text-zinc-400 text-3xl cursor-pointer' /> : <i onClick={next} className='fa-solid fa-chevron-right text-3xl cursor-pointer' />}
+        {activeSlide >= props.array.length - 1 ? <i className='fa-solid fa-chevron-right text-zinc-400 text-3xl cursor-pointer' /> : <i onClick={next} className='fa-solid fa-chevron-right text-3xl cursor-pointer text-sky-600 text-shadow-sm hover:text-shadow-md text-shadow-sky-800 hover:text-shadow-sky-600' />}
       </div>
     </div>
   )
