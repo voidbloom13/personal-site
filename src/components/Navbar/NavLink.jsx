@@ -1,7 +1,7 @@
 
 function NavLink(props) {
   const anchorProps = {
-    className: "w-full md:w-auto transition-all duration-200 font-[Montserrat] md:font-serif md:text-lg hover:bg-[rgba(0,0,0,0.2)] hover:md:bg-transparent hover:text-zinc-50 hover:md:text-sky-500 px-4 py-2 md:py-1",
+    className: "w-full md:w-auto transition-all duration-200 font-[Montserrat] md:font-serif md:text-lg hover:bg-[rgba(0,0,0,0.2)] hover:md:bg-transparent hover:text-zinc-50 hover:md:text-indigo-800 px-4 py-2 md:py-1",
     href: props.link,
     onClick: props.onClick
   };
