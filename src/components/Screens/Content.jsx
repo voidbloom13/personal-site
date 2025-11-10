@@ -8,7 +8,7 @@ import Skills from "../Skills/Skills";
 function Content(props) {
   return (
     <AnimatePresence initial={true} mode="wait">
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .4 }}>
+      <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} transition={{ duration: .2 }}>
         <Nav />
         <div className="bg-linear-to-b from-black to-indigo-800 py-24">
           <Intro />

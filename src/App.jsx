@@ -8,11 +8,11 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <>
+    <div className='bg-black'>
       <Routes location={location} key={location.pathname}>
         <Route index element={<SplashScreen />} />
         <Route path="/home" element={<Content />} />
       </Routes>
-    </>
+    </div>
   )
 }
